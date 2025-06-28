@@ -1,0 +1,21 @@
+<form>
+  <div class="form-group">
+    <label for="prompt">Ask ChatGPT</label>
+    <textarea name="prompt" id="prompt" rows="4" style="width: 100%; resize: vertical;" placeholder="Ask anything..."></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="npc-select">Select NPC</label>
+    <select id="npc-select" style="width: 100%;">
+      <option value="">None</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <button type="button" id="chatgpt-send" class="dialog-button">Send</button>
+  </div>
+
+  <div id="chatgpt-output" class="chatgpt-response-box" style="margin-top: 10px; padding: 10px; background: rgba(0, 0, 0, 0.2); border: 1px solid #888; border-radius: 6px; max-height: 250px; overflow-y: auto;">
+    <!-- GPT's reply will appear here -->
+  </div>
+</form>

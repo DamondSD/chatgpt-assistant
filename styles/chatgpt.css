@@ -1,0 +1,117 @@
+/* ChatGPT UI – Wizard Grimoire Theme */
+
+/* ───🔐 Secure Settings Overrides ─────────────────────────────── */
+input[name="chatgpt-assistant.openaiApiKey"] {
+  -webkit-text-security: disc;
+}
+
+
+#chatgpt-ui {
+  background: url('wizard-parchment.png') center center no-repeat;
+  background-size: cover;
+  border: 4px double #8855aa;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(132, 77, 255, 0.3);
+  font-family: "IM Fell English", "Palatino Linotype", serif;
+  color: #2d1b0f;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* allow window resizing to control this */
+}
+
+#chatgpt-ui .window-header {
+  background: linear-gradient(to right, #2e003e, #5d197d);
+  color: #f0eaff;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #aa7fdc;
+  text-shadow: 1px 1px 4px #000;
+}
+
+#chatgpt-ui label {
+  font-weight: bold;
+  color: #3b1145;
+  text-shadow: 0 0 2px #f5d8ff;
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+#chatgpt-ui form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#chatgpt-ui select,
+#chatgpt-ui textarea,
+#chatgpt-ui button {
+  background: #fcf8ec;
+  border: 2px solid #7d4f9e;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  margin-bottom: 0.8em;
+  box-sizing: border-box;
+  line-height: 1.4em;
+  height: auto;
+  color: #2d1b0f;
+}
+
+#chatgpt-ui button {
+  background-color: #8855aa;
+  color: #fff9f9;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 0 0 2px #000;
+  transition: background-color 0.2s ease;
+}
+
+#chatgpt-ui button:hover {
+  background-color: #a470cc;
+}
+
+#chatgpt-ui textarea {
+  flex: 1; /* allow it to grow/shrink */
+  resize: vertical;
+  min-height: 80px;
+}
+
+.chatgpt-response {
+  position: relative;
+  font-family: "Book Antiqua", "Palatino Linotype", serif;
+  font-size: 15px;
+  color: #2d1b0f;
+  background: url('./wizard-parchment.png') no-repeat center center;
+  background-size: cover;
+  border: 2px solid #b88c4a;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.chatgpt-response::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  z-index: 0;
+  pointer-events: none;
+}
+
+.chatgpt-response * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+

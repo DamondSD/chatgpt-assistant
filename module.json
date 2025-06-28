@@ -1,0 +1,18 @@
+{
+  "name": "chatgpt-assistant",
+  "title": "ChatGPT Assistant",
+  "description": "A test module for integrating ChatGPT into Foundry VTT.",
+  "version": "1.0.0",
+  "author": "You",
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "12",
+  "scripts": [
+    "scripts/chatgpt.js",
+    "scripts/chatgpt-ui.js",
+    "scripts/module.js"
+  ],
+  "styles": ["styles/chatgpt.css"],
+  "url": "https://github.com/DamondSD/chatgpt-assistant",
+  "manifest": "https://raw.githubusercontent.com/DamondSD/chatgpt-assistant/main/module.json",
+  "download": "https://github.com/DamondSD/chatgpt-assistant/releases/download/v1.0.0/chatgpt-assistant.zip"
+}
